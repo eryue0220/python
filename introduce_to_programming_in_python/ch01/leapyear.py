@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import sys
+import stdio
+
+year = int(sys.argv[1])
+
+isLeapYear = year % 4 == 0
+isLeapYear = isLeapYear and (year % 100 != 0)
+isLeapYear = isLeapYear or (year % 400 == 0)
+
+stdio.writeln(isLeapYear)
+
+
+
